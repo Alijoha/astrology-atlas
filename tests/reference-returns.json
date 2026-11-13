@@ -1,0 +1,82 @@
+[
+  {
+    "profile": {
+      "id": "p1",
+      "name": "J2000",
+      "date": "2000-01-01",
+      "time": "12:00",
+      "unknown": false,
+      "city": "Greenwich",
+      "lat": 51.4779,
+      "lon": 0,
+      "zone": "UTC"
+    },
+    "body": "Sun",
+    "target": 280.3687386398185,
+    "start": "2026-01-01T00:00:00Z",
+    "appDate": "2027-01-01T01:08:19.517Z",
+    "referenceTarget": 280.36891967534336,
+    "referenceDate": "2027-01-01T01:08:37.622727+00:00",
+    "reference": "Swiss Ephemeris 2.10.3, Moshier, geocentric apparent tropical"
+  },
+  {
+    "profile": {
+      "id": "p1",
+      "name": "J2000",
+      "date": "2000-01-01",
+      "time": "12:00",
+      "unknown": false,
+      "city": "Greenwich",
+      "lat": 51.4779,
+      "lon": 0,
+      "zone": "UTC"
+    },
+    "body": "Moon",
+    "target": 223.32389112747416,
+    "start": "2026-01-01T00:00:00Z",
+    "appDate": "2026-01-12T13:46:22.581Z",
+    "referenceTarget": 223.32377543840957,
+    "referenceDate": "2026-01-12T13:46:25.969184+00:00",
+    "reference": "Swiss Ephemeris 2.10.3, Moshier, geocentric apparent tropical"
+  },
+  {
+    "profile": {
+      "id": "p2",
+      "name": "London",
+      "date": "1995-11-07",
+      "time": "14:30",
+      "unknown": false,
+      "city": "London",
+      "lat": 51.5074,
+      "lon": -0.1278,
+      "zone": "Europe/London"
+    },
+    "body": "Sun",
+    "target": 224.7034979920225,
+    "start": "2026-01-01T00:00:00Z",
+    "appDate": "2026-11-07T02:47:02.558Z",
+    "referenceTarget": 224.7035014756513,
+    "referenceDate": "2026-11-07T02:46:38.840757+00:00",
+    "reference": "Swiss Ephemeris 2.10.3, Moshier, geocentric apparent tropical"
+  },
+  {
+    "profile": {
+      "id": "p2",
+      "name": "London",
+      "date": "1995-11-07",
+      "time": "14:30",
+      "unknown": false,
+      "city": "London",
+      "lat": 51.5074,
+      "lon": -0.1278,
+      "zone": "Europe/London"
+    },
+    "body": "Moon",
+    "target": 48.08052653426715,
+    "start": "2026-01-01T00:00:00Z",
+    "appDate": "2026-01-27T00:54:53.618Z",
+    "referenceTarget": 48.08059524763779,
+    "referenceDate": "2026-01-27T00:54:59.933499+00:00",
+    "reference": "Swiss Ephemeris 2.10.3, Moshier, geocentric apparent tropical"
+  }
+]

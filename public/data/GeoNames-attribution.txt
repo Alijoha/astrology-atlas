@@ -1,0 +1,5 @@
+Birthplace data: GeoNames geographical database, https://www.geonames.org/
+Source: cities15000.zip, https://download.geonames.org/export/dump/
+License: Creative Commons Attribution 4.0, https://creativecommons.org/licenses/by/4.0/
+Dataset reduced to place name, ASCII name, country code, admin code, coordinates, IANA zone, and population, sorted by population. Retrieved November 2026.
+This is a bundled local reference. User searches are performed locally and are not sent to GeoNames.

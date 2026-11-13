@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.validation/
+.vercel/
+*.tsbuildinfo
+.openai/
+.env
+.env.*
+!.env.example
+artifacts/
+*.zip
+astrology-atlas-v*.html
+.DS_Store

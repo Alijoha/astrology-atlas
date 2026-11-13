@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {returnChart,secondaryProgressions} from '../src/timing';
+import {longitude,delta} from '../src/astro';
+import {dignity} from '../src/knowledge';
+const cases=JSON.parse(fs.readFileSync(new URL('./reference-returns.json',import.meta.url),'utf8'));
+for(const c of cases)test(`Independent ${c.body} return: ${c.profile.name}`,()=>{const result=returnChart(c.profile,c.body,new Date(c.start));assert.ok(Math.abs(+result.date-+new Date(c.referenceDate))<90000);assert.ok(Math.abs(delta(longitude(c.body,result.date),result.target))<1e-6);assert.ok(+result.date>=+new Date(c.start));});
+test('Secondary progression displays the day-for-tropical-year ephemeris moment',()=>{const p=cases[0].profile;const birth=new Date('2000-01-01T12:00:00Z');const at=new Date(+birth+365.2422*86400000*20);const result=secondaryProgressions(p,at);assert.equal(+result.date,+birth+20*86400000);assert.ok(Math.abs(result.years-20)<1e-10);assert.ok(result.positions.every(p=>p.house===undefined));assert.throws(()=>secondaryProgressions(p,new Date('1999-01-01')),/after the birth/);});
+test('Traditional dignity distinguishes dual Mercury conditions and modern rulers',()=>{assert.equal(dignity('Mercury','Virgo'),'Traditional domicile and exaltation');assert.equal(dignity('Mercury','Pisces'),'Traditional detriment and fall');assert.equal(dignity('Pluto','Scorpio'),'Modern rulership');});

@@ -1,0 +1,7 @@
+.git
+node_modules
+.validation
+artifacts
+*.zip
+astrology-atlas-v*.html
+.env*

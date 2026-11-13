@@ -1,0 +1,40 @@
+{
+  "name": "astrology-atlas",
+  "version": "4.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 5173 --strictPort",
+    "build": "tsc -b && vite build",
+    "test": "node --import tsx tests/astro.test.ts && node --import tsx tests/timing.test.ts && node --import tsx tests/flows.test.tsx && node --import tsx tests/studio.test.tsx && node --import tsx tests/birth-calculations.test.ts && node --import tsx tests/birth-portrait.test.tsx && node --import tsx tests/personal-tools.test.ts",
+    "preview": "vite preview --host 0.0.0.0",
+    "build:standalone": "node scripts/build-standalone.mjs",
+    "test:browser": "node scripts/browser-qa.mjs && node scripts/personal-browser-qa.mjs"
+  },
+  "dependencies": {
+    "astronomy-engine": "^2.1.19",
+    "lucide-react": "^0.468.0",
+    "luxon": "^3.7.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.10",
+    "@types/jsdom": "^30.0.0",
+    "@types/luxon": "^3.7.0",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^4.4.1",
+    "jsdom": "^31.0.1",
+    "playwright-core": "^1.65.0",
+    "tsx": "^4.19.4",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.5",
+    "esbuild": "^0.28.2"
+  },
+  "engines": {
+    "node": "22.x"
+  }
+}
