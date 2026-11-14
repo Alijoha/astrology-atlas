@@ -8,3 +8,5 @@ import './readability.css';
 import './birth-portrait.css';
 
 import './personal.css';
+
+import './learn.css';

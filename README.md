@@ -1,4 +1,4 @@
-# Astrology Atlas 4.0
+# Astrology Atlas 4.1
 
 Deployment configuration for Vercel is included. See [DEPLOY.md](DEPLOY.md). Generate the optional offline HTML from source with `npm run build:standalone`.
 
@@ -22,6 +22,16 @@ The four main areas are Explore, My Charts, Compatibility, and Calendar, with de
 Enter any birth date from 1900 to 2099, with an optional name. Date-only portraits show possible Western placements, the Chinese lunar year/animal/phase, Maya Tzolk’in, Haab, and Long Count, and personal symbolic stones and colors. The name labels the card without changing sky calculations. Optional local time and birthplace unlock the full tropical chart, Moon, Ascendant, chart ruler, houses, aspects, and connected readings. An offline index of 34,215 cities fills coordinates and IANA time zone; the user confirms these and can enter another location manually.
 
 The separate Birth calendar is available within the portrait and Calendar. It shows Gregorian birthdays, matching Chinese lunar birthdays, Maya 260/365-day recurrences, and exact solar/lunar returns when the birth moment is known. Filter or export individual events or the selected year's events as .ics. A February 29 birthday is not silently moved to another date; a Chinese leap-month birthday requires the same leap-month status. Profiles, full JSON records, and readable standalone astral cards can be saved/exported.
+
+## Find your way around
+
+Open **Start here · Guide** in the navigation or **Guide** at the top of any screen. The home page has shortcuts for Signs & Personality, My personality reading, the guide, and Runes. The guide gives task-based instructions and a glossary, including the difference between a monthly lunar return and an annual solar return.
+
+**Signs & Personality** puts all twelve signs in one readable page selector, with visible positive traits, challenges, communication style, emotional needs, and deeper chapters. Search results for signs show the same strengths/challenges sections. **My personality reading** opens Birth Portrait directly into the new Personality reading tab and loads the first saved person when available. Date-only results preserve alternative Moon/planet signs and omit a guessed rising sign; known-time readings connect six placements with houses and aspects. Jump buttons help readers move between placements.
+
+**Runes** includes the 24 Elder Futhark letters, separate historical name/gloss context and original modern reflection prompts, one- or three-rune draws without replacement, favorites, a private note journal, export/import, and delete controls. Uncertain names are marked, including Perthro and Kenaz/kaunan. The index uses a common 24-rune ordering ending Dagaz, Othala; no blank rune or automatic rune-to-zodiac assignment is added. Historical references are the National Museum of Denmark and Swedish History Museum. Noto Sans Runic is bundled under SIL OFL, with license in public/fonts and the production/standalone notices.
+
+Guide, signs, and rune references need no birth information. Rune draws use browser cryptographic randomness and are modern reflection exercises, not a prediction service. All saved charts and records remain local; the new version retains the existing storage keys and adds rune reflections to the same backup/import/delete flow.
 
 ## The eight Personal Companion tools
 
@@ -68,7 +78,7 @@ See `VALIDATION.md` for numerical checks and end-to-end testing status. Swiss Ep
 
 ## Interactive interpretation and reading
 
-The reference library includes 343 searchable topics, including 132 planet/Ascendant-in-sign combinations. Twelve authored sign chapters and their 72 core placement interpretations combine with planetary-function, house, and aspect context in the explorers. Slow-moving planets explicitly include generational context. Interpretations are editorial symbolic prompts, rather than a claim that a position determines behavior.
+The reference library includes 374 searchable topics, including 132 planet/Ascendant-in-sign combinations. Twelve authored sign chapters and their 72 core placement interpretations combine with planetary-function, house, and aspect context in the explorers. Slow-moving planets explicitly include generational context. Interpretations are editorial symbolic prompts, rather than a claim that a position determines behavior.
 
 Chart synthesis joins the calculated placements, chart ruler, close aspects, and sign/house context. Element/modality distributions count the ten planets equally; they are not personality scores. Grand trines and T-squares use the selected fixed 6° aspect convention; the sign stellium convention is three or more of the ten planets.
 

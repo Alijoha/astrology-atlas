@@ -1,4 +1,4 @@
-# Open Astrology Atlas 4 on your Mac
+# Open Astrology Atlas 4.1 on your Mac
 
 ## The easy way — no Terminal
 
@@ -20,7 +20,15 @@ To move saved profiles from an older HTML file or localhost:5173: open the old a
 
 The script selects the correct directory and installs packages when needed. This option requires Node.js 22 or newer. Using the same browser and localhost:5173 address retains old saved charts and favorites. Avoid running npm commands from your Mac home folder.
 
-## Added in version 4
+## Added in version 4.1
+
+- A visible **Start here · Guide** page and a permanent Guide button, with short task instructions, shortcuts, and a glossary.
+- **Signs & Personality** for all twelve signs, with visible positive traits and challenges.
+- **My personality reading** and a Personality reading tab in Birth Portrait, with date-only alternatives or a complete known-time reading.
+- A 24-rune Elder Futhark library, clearly separated historical/modern meanings, reflection draws, and private saved notes.
+- Rune notes are included in library backups and can be individually or collectively deleted. Existing charts stay in the browser.
+
+## Included since version 4
 
 - **My Sky Today:** exact personal transit peaks and orb windows, with reflection prompts and export.
 - **Life timeline:** sky events and returning cycles alongside private searchable milestones.

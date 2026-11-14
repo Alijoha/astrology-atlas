@@ -15,6 +15,6 @@ if [ ! -d node_modules ]; then
   echo "Installing Astrology Atlas. This is needed only the first time in this folder."
   npm ci
 fi
-echo "Starting Astrology Atlas 4.0. Keep this Terminal window open."
+echo "Starting Astrology Atlas 4.1. Keep this Terminal window open."
 echo "When Vite says ready, open http://localhost:5173 or refresh the existing page."
 npm run dev

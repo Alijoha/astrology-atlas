@@ -2,7 +2,7 @@
 
 ## Build and interaction verification
 
-The production TypeScript check and Vite build pass. `npm test` executes 95 passing results across astronomy/reference, timing, app-flow, Chart Lab, Birth Portrait calculation, and Birth Portrait interaction, and Personal Companion calculation suites (including containing integration tests). The interaction suite uses React Testing Library and JSDOM against the actual app components and state; it does not substitute screenshots for assertions.
+The production TypeScript check and Vite build pass. `npm test` executes 107 passing results across astronomy/reference, timing, app-flow, Chart Lab, Birth Portrait calculation, and Birth Portrait interaction, and Personal Companion calculation suites (including containing integration tests). The interaction suite uses React Testing Library and JSDOM against the actual app components and state; it does not substitute screenshots for assertions.
 
 The four requested flows pass:
 
@@ -103,3 +103,12 @@ Other checks cover unknown-time rejection for exact tools, DST-gap handling in s
 `scripts/personal-browser-qa.mjs` tests all eight tools in real headless Chromium, plus persistence, full backup/export, fresh-context mobile import, and delete controls. It checks the 390px phone layout for every tool and at least 18px paragraph text. A downloaded annual planner was opened in Chromium and rendered to PDF; calendar downloads contain actual standard alarm blocks. Original four browser flows were rerun against V4 as well. Both browser reports show zero runtime errors and zero external HTTP requests in the tested flows. Reports are `artifacts/browser-qa.json` and `artifacts/personal-browser-qa.json`; screenshots and synthetic sample downloads are generated alongside them.
 
 Browser scope remains desktop/phone viewport emulation over loopback HTTP, not a physical phone or a file-origin session on the user's Mac. Cloud policy blocks file URLs. Calendar alarm delivery depends on importing the .ics into a calendar application and that application's alarm settings; the app has no background notification service.
+
+
+## V4.1 guide, personality, and runes
+
+Twelve new automated results bring the full suite to 107. They verify complete 24-rune references, distinct sampling without replacement, invalid journal-record rejection, all twelve signs’ visible positive/challenging traits, direct and saved personality readings, date-only ambiguity handling, guide task navigation, rune favorites, saved-note updates, full export/import merge, and deletion. The guide’s glossary explicitly explains monthly lunar returns. A new locally bundled OFL runic font ensures consistent glyph display.
+
+`scripts/guide-browser-qa.mjs` passes in desktop 1440×1000 and phone 390×844 Chromium, with no page runtime errors or external HTTP requests. It exercises the guide, sign profiles and search, the My Personality deep link, saved exact chart and arbitrary-date readings, placement jump buttons, all 24 rune buttons, historical uncertainty, draws, notes, favorites, backup/import and individual deletion. Phone checks cover the largest type setting, no root horizontal overflow, font loading, and accessible paragraph sizes. Synthetic profiles and notes are used. `ATLAS_LIVE_URL` runs the same checks against the deployed production origin. The existing browser suites cover the original app and eight Personal Companion tools.
+
+Historical rune context is sourced separately from modern editorial reflection. The names/glosses are reconstructed or informed by later traditions; uncertain readings are identified. No runic personality claims are derived from a birthday. Random draws are reflective prompts rather than verified predictions. These content conventions do not validate divination.
